@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Page Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Phishing Page Detector</h1>
+
+    <p>Enter a website URL to scan for common phishing signs:</p>
+
+    <div class="input-row">
+      <input id="urlInput" placeholder="https://example.com" />
+      <button onclick="scan()">Scan</button>
+    </div>
+
+    <div id="result" class="card hidden">
+      <h2>Scan Result</h2>
+      <p id="score"></p>
+      <ul id="details"></ul>
+    </div>
+
+    <p class="note">
+      ⚠️ This demo uses basic checks. Do not rely on it for real-world security decisions.
+    </p>
+  </div>
+
+  <script src="script.jss"></script>
+</body>
+</html>
